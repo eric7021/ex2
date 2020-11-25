@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!-- Fig. 6.7: addition.html -->
+<!-- Addition script. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>00557021-HW3-2</title>
+      <style type = "text/css">
+      h1:{
+         font-family: "helvetica";
+      }
+      .selector{ 
+         color:firebrick;
+         font-weight:thick;
+          }
+      .num{
+         color:navy;
+         text-decoration: underline;
+      }
+      
+      </style>
+      <script>
+
+         var name; // first string entered by user
+         var number; // second string entered by user
+         var birthnumber; // first number to add
+         var number2; // second number to add
+
+         // read in first number from user as a string
+         
+         name = window.prompt( "Please enter your name", "guest" );
+         
+
+         // read in second number from user as a string
+         number = window.prompt( "Please input your birth year", "2019" );
+
+         // convert numbers from strings to integers
+         
+         birthnumber = parseInt( number );
+         age = 2020-birthnumber;
+
+
+         // display the results
+         
+         if(age == 1) {
+            document.writeln( "<h1>Hello, <span class='selector'>"+ name +"</span> !<br>You are <span class='num'>"+ "one" +"</span> years old !</h1>");
+            console.log("Hello, "+ name +" !");
+            console.log("You are one year old! ");
+         
+         }
+         else if(age > 1){
+            document.writeln( "<h1>Hello, <span class='selector'>"+ name +"</span> !<br>You are <span class='num'>"+ age +"</span> years old !</h1>");
+            console.log("Hello, "+ name +" !");
+            console.log("You are " + age +  " years old! ");
+         }
+         else {
+            document.writeln( "<h1>Hello, <span class='selector'>"+ name +"</span> !<br>Your age is a mystery!</h1>");
+            console.log("Hello, "+ name +" !");
+            console.log("Your input is incorrect")
+            alert('Your input is incorrect');
+         }
+
+
+      </script>
+   </head><body></body>
+</html>
+
+
+<!--
+**************************************************************************
+* (C) Copyright 1992-2012 by Deitel & Associates, Inc. and               *
+* Pearson Education, Inc. All Rights Reserved.                           *
+*                                                                        *
+* DISCLAIMER: The authors and publisher of this book have used their     *
+* best efforts in preparing the book. These efforts include the          *
+* development, research, and testing of the theories and programs        *
+* to determine their effectiveness. The authors and publisher make       *
+* no warranty of any kind, expressed or implied, with regard to these    *
+* programs or to the documentation contained in these books. The authors *
+* and publisher shall not be liable in any event for incidental or       *
+* consequential damages in connection with, or arising out of, the       *
+* furnishing, performance, or use of these programs.                     *
+**************************************************************************
+-->
